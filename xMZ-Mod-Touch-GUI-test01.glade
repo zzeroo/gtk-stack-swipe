@@ -30,7 +30,7 @@ Author: Stefan Müller <s.mueller@it.kls-glt.de>
   <object class="GtkWindow">
     <property name="can_focus">False</property>
     <child>
-      <object class="GtkStack">
+      <object class="GtkStack" id="stack1">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <child>
@@ -48,6 +48,18 @@ Author: Stefan Müller <s.mueller@it.kls-glt.de>
                 <property name="expand">True</property>
                 <property name="fill">True</property>
                 <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkStackSwitcher">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="stack">stack1</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
               </packing>
             </child>
           </object>
@@ -73,6 +85,18 @@ Author: Stefan Müller <s.mueller@it.kls-glt.de>
                 <property name="position">0</property>
               </packing>
             </child>
+            <child>
+              <object class="GtkStackSwitcher">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="stack">stack1</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
           </object>
           <packing>
             <property name="name">page1</property>
@@ -95,6 +119,18 @@ Author: Stefan Müller <s.mueller@it.kls-glt.de>
                 <property name="expand">True</property>
                 <property name="fill">True</property>
                 <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkStackSwitcher">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="stack">stack1</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
               </packing>
             </child>
           </object>
