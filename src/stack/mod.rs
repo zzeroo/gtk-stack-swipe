@@ -28,7 +28,8 @@ impl Stack {
     }
 
     fn current_window(&self) -> Option<String> {
-        self.stack.get_visible_child_name()
+        let current_window_name = self.stack.get_visible_child_name();
+        return Some(current_window_name.unwrap().to_owned());
     }
 
     pub fn next_window(&self) {
